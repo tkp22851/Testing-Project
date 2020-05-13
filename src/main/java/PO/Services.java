@@ -3,11 +3,8 @@ import org.openqa.selenium.By;
 
 public class Services  extends Utils
 {
-    // All the Locator Always on top of the Class
-    By _servicespage  = By.cssSelector("[title=\"Services\"]");
 
 
-    public void hoverOnServicesPage(){ mouseHover(_servicespage); }
 
     public void openSubPagesInServicesPage(String pagename)
     {

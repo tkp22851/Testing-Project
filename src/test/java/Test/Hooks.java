@@ -22,9 +22,10 @@ public class Hooks extends BasePage
 
     {
         allbrowser.selectBrowser();
-        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.NANOSECONDS);
+        driver.manage().deleteAllCookies();
         driver.manage().window().fullscreen();
         driver.get("https://aml-analytics.com/");//pre condition for all the test cases : Type URL demo.nopcommerce.com
+        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.NANOSECONDS);
 
     }
 

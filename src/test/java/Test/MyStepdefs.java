@@ -7,12 +7,10 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-
 public class MyStepdefs extends Utils {
 
     private HomePage homepage  = new HomePage();
     private Services services  = new Services();
-
 
 //      To Verify All pages in Home Page
     @Given("^User is on the Home Page$")
@@ -33,7 +31,7 @@ public class MyStepdefs extends Utils {
 //      To Verify SUb Pages In Services Page
 
     @When("^User Hover on Services page")
-    public void userHoverOnServicesPage() { services.hoverOnServicesPage(); }
+    public void userHoverOnServicesPage() { homepage.hoverOnServicesPage(); }
 
     @And("^User navigate to ([^\"]*)$")
     public void userNavigateToPagelink(String  pagelink) {

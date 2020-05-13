@@ -5,14 +5,14 @@ import org.openqa.selenium.By;
 public class HomePage extends Utils {
 
     By _openteampage = By.cssSelector("[title=\"Team\"]");
-    By _openservicespage = By.linkText("SERVICES");
+    By _servicespage  = By.cssSelector("[title=\"Services\"]");
     By _opencontactpage = By.linkText("CONTACT");
     By _openloginpage = By.linkText("LOGIN");
     By _addresstext   = By.xpath("(//div[@class=\"contact-box\"])[1]/address");
 
     public void openTeamPage() { click_Element(By.linkText("_openteampage")); }
 
-    public void openServicesPage(){ mouseHover(_openservicespage); }
+    public void hoverOnServicesPage(){ mouseHover(_servicespage); }
 
     public void openContactPage() {
         click_Element(_opencontactpage);

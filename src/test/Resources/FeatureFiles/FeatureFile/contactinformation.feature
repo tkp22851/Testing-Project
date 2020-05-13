@@ -1,7 +1,7 @@
-@smoke @info
+@Smoke @ContactInfo
 Feature: verify contact information on footer in all pages
 
-  @address
+  @Address
   Scenario Outline: User is able to view Contact Information on All Main Pages
     Given User is on the Home Page
     When  User Navigate to Bottom of the <pages>
@@ -12,7 +12,7 @@ Feature: verify contact information on footer in all pages
       | TEAM    |
       | CONTACT |
 
-  @address1
+  @Address
   Scenario Outline: User is able to view Contact Information on All Sub Pages in Services Page
     Given User is on the Home Page
     When  User Hover on Services page

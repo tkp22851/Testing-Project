@@ -1,25 +1,25 @@
-@smoke @category
-Feature: verify User Is Able to Navigate to All pages
+@Smoke @AllPages
+Feature: verify User is able to Navigate to All pages
 
   @Homepage
-  Scenario Outline: user should be able to Navigate to all link in home page
-    Given user is on the home page
-    When  User click On <link>
-    Then  should be able to see <Page>
+  Scenario Outline: User is able to Navigate to all Pages on Home Page
+    Given User is on the Home Page
+    When  User click on <link>
+    Then  User is able to View <Page>
     Examples:
       | link    | Page                    |
-      |HOME    | Home   AML Analytics    |
-      |TEAM    | Team   AML Analytics    |
-      |CONTACT | Contact   AML Analytics |
+      | HOME    | Home   AML Analytics    |
+      | TEAM    | Team   AML Analytics  |
+      | CONTACT | Contact   AML Analytics |
 
   @servicesPages
-  Scenario Outline: user should be able to Navigate to all link in Services page
-    Given user is on the home page
-    When  User Click on Services page
+  Scenario Outline: User should able to Navigate to All Sub Pages in Services Page
+    Given User is on the Home Page
+    When  User Hover on Services page
     And  User navigate to <pagelink>
-    Then  should able to see <servicesSubPage>
+    Then  User is able to View <servicesSubPage>
     Examples:
-      | pagelink                         | servicesSubPage                                     |
+      | pagelink                         | servicesSubPage                                  |
       | Analyser Online                  | Analyser Online   AML Analytics                  |
       | Global Benchmark                 | Global Benchmark   AML Analytics                 |
       | Sandbox                          | Sandbox   AML Analytics                          |
