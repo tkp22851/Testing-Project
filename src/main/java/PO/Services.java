@@ -1,16 +1,20 @@
 package PO;
 import org.openqa.selenium.By;
 
-public class Services  extends  Utils
+public class Services  extends Utils
 {
+    // All the Locator Always on top of the Class
     By _servicespage  = By.cssSelector("[title=\"Services\"]");
 
 
-    public void clickOnServicesPage(){ mouseHover(_servicespage); }
+    public void hoverOnServicesPage(){ mouseHover(_servicespage); }
+
     public void openSubPagesInServicesPage(String pagename)
     {
+        //  Make Dynamic locator
         String  css = "[title=" + '"' +  pagename + '"' + "]";
-        System.out.println(css);
+        //  To Print Locator
+        //  System.out.println(css);
         waitForElementToBeDisplay(By.cssSelector(css),10);
         click_Element(By.cssSelector(css));
     }

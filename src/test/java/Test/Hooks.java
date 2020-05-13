@@ -1,4 +1,5 @@
 package Test;
+import PO.AllBrowser;
 import PO.BasePage;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -9,22 +10,32 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
 
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
 
-
-
-public class Hooks extends BasePage {
-
+public class Hooks extends BasePage
+{
+    AllBrowser allbrowser = new AllBrowser();
 
     @Before
-    public void setUp() {
-        chrome_Driver();
+    public void openBrowser()
+
+    {
+        allbrowser.selectBrowser();
+        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.NANOSECONDS);
+        driver.manage().window().fullscreen();
+        driver.get("https://aml-analytics.com/");//pre condition for all the test cases : Type URL demo.nopcommerce.com
+
     }
 
 
+
+
     @After
-    public void screenshot(Scenario scenario) throws   Exception{
-        if (scenario.isFailed()) {
+    public void screenShot(Scenario scenario) throws   Exception
+    {
+        if (scenario.isFailed())
+        {
             try{
             final File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("src\\test\\Resources\\Screenshot\\" + System.currentTimeMillis() + ".jpg"));
@@ -32,9 +43,10 @@ public class Hooks extends BasePage {
             {
                 System.err.println(somePlatformDontSupportScreenshot.getMessage());
             }
-        }driver.quit();
+        }  driver.quit();
     }
 
-    }
+
+}
 
 

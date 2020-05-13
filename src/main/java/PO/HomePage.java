@@ -8,7 +8,7 @@ public class HomePage extends Utils {
     By _openservicespage = By.linkText("SERVICES");
     By _opencontactpage = By.linkText("CONTACT");
     By _openloginpage = By.linkText("LOGIN");
-
+    By _addresstext   = By.xpath("(//div[@class=\"contact-box\"])[1]/address");
 
     public void openTeamPage() { click_Element(By.linkText("_openteampage")); }
 
@@ -35,7 +35,21 @@ public class HomePage extends Utils {
         System.out.println(actualTitle);
         assert_element(removespecialchara,title,"Test case fail");
     }
+
+    public void verifyContactInformationInAllPages()
+    {
+//         To verify Address
+        String address =get_text_Element(_addresstext);
+        String expectedaddresss = "Thruxton Down House, Thruxton Down, Andover, Hampshire, UK. SP11 8PR";
+        assert_element(address,expectedaddresss,"Address is not Matching ");
+
+    }
+
+
 }
+
+
+
 
 
 

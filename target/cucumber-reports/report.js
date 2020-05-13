@@ -1,9 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/Resources/FeatureFiles/pages.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/Resources/FeatureFiles/FeatureFiles/contactinformation.feature");
 formatter.feature({
   "line": 2,
-  "name": "verify User Is Able to Navigate to All pages",
+  "name": "verify contact information on footer in all pages",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages",
+  "id": "verify-contact-information-on-footer-in-all-pages",
   "keyword": "Feature",
   "tags": [
     {
@@ -12,354 +12,32 @@ formatter.feature({
     },
     {
       "line": 1,
-      "name": "@category"
+      "name": "@info"
     }
   ]
-});
-formatter.scenarioOutline({
-  "line": 5,
-  "name": "user should be able to Navigate to all link in home page",
-  "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 4,
-      "name": "@Homepage"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "user is on the home page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User click On \u003clink\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "should be able to see \u003cPage\u003e",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 9,
-  "name": "",
-  "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;",
-  "rows": [
-    {
-      "cells": [
-        "link",
-        "Page"
-      ],
-      "line": 10,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;1"
-    },
-    {
-      "cells": [
-        "HOME",
-        "Home   AML Analytics"
-      ],
-      "line": 11,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;2"
-    },
-    {
-      "cells": [
-        "TEAM",
-        "Team   AML Analytics"
-      ],
-      "line": 12,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;3"
-    },
-    {
-      "cells": [
-        "CONTACT",
-        "Contact   AML Analytics"
-      ],
-      "line": 13,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;4"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 5598719264,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "user should be able to Navigate to all link in home page",
-  "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
-      "name": "@smoke"
-    },
-    {
-      "line": 4,
-      "name": "@Homepage"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "user is on the home page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User click On HOME",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "should be able to see Home   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
-});
-formatter.result({
-  "duration": 79714140,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "HOME",
-      "offset": 14
-    }
-  ],
-  "location": "MyStepdefs.userClickOnLink(String)"
-});
-formatter.result({
-  "duration": 2158438689,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Home   AML Analytics",
-      "offset": 22
-    }
-  ],
-  "location": "MyStepdefs.userShouldBeAbleToSeeTitle(String)"
-});
-formatter.result({
-  "duration": 16164865,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 619874415,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5781109101,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 12,
-  "name": "user should be able to Navigate to all link in home page",
-  "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
-      "name": "@smoke"
-    },
-    {
-      "line": 4,
-      "name": "@Homepage"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "user is on the home page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User click On TEAM",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "should be able to see Team   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
-});
-formatter.result({
-  "duration": 33785,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "TEAM",
-      "offset": 14
-    }
-  ],
-  "location": "MyStepdefs.userClickOnLink(String)"
-});
-formatter.result({
-  "duration": 408778353,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Team   AML Analytics",
-      "offset": 22
-    }
-  ],
-  "location": "MyStepdefs.userShouldBeAbleToSeeTitle(String)"
-});
-formatter.result({
-  "duration": 4627636,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 595777864,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 4725401706,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 13,
-  "name": "user should be able to Navigate to all link in home page",
-  "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-home-page;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
-      "name": "@smoke"
-    },
-    {
-      "line": 4,
-      "name": "@Homepage"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "user is on the home page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User click On CONTACT",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "should be able to see Contact   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
-});
-formatter.result({
-  "duration": 86386,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "CONTACT",
-      "offset": 14
-    }
-  ],
-  "location": "MyStepdefs.userClickOnLink(String)"
-});
-formatter.result({
-  "duration": 788704223,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Contact   AML Analytics",
-      "offset": 22
-    }
-  ],
-  "location": "MyStepdefs.userShouldBeAbleToSeeTitle(String)"
-});
-formatter.result({
-  "duration": 7098616,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 640332492,
-  "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 16,
-  "name": "user should be able to Navigate to all link in Services page",
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -369,116 +47,113 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see \u003cservicesSubPage\u003e",
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 21,
+  "line": 22,
   "name": "",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;",
   "rows": [
     {
       "cells": [
-        "pagelink",
-        "servicesSubPage"
-      ],
-      "line": 22,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;1"
-    },
-    {
-      "cells": [
-        "Analyser Online",
-        "Analyser Online   AML Analytics"
+        "pagelink"
       ],
       "line": 23,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;2"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;1"
     },
     {
       "cells": [
-        "Global Benchmark",
-        "Global Benchmark   AML Analytics"
+        "Analyser Online"
       ],
       "line": 24,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;3"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;2"
     },
     {
       "cells": [
-        "Sandbox",
-        "Sandbox   AML Analytics"
+        "Global Benchmark"
       ],
       "line": 25,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;4"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;3"
     },
     {
       "cells": [
-        "Custom Testing",
-        "Custom Testing   AML Analytics"
+        "Sandbox"
       ],
       "line": 26,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;5"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;4"
     },
     {
       "cells": [
-        "Sanctions Alert Service (SAS)",
-        "Sanctions Alert Service (SAS)   AML Analytics"
+        "Custom Testing"
       ],
       "line": 27,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;6"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;5"
     },
     {
       "cells": [
-        "SANCTIONS ALERT TESTING (SAT)",
-        "SANCTIONS ALERT TESTING (SAT)   AML Analytics"
+        "Sanctions Alert Service (SAS)"
       ],
       "line": 28,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;7"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;6"
     },
     {
       "cells": [
-        "Transaction Monitoring Validator",
-        "Transaction Monitoring Validator   AML Analytics"
+        "SANCTIONS ALERT TESTING (SAT)"
       ],
       "line": 29,
-      "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;8"
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;7"
+    },
+    {
+      "cells": [
+        "Transaction Monitoring Validator"
+      ],
+      "line": 30,
+      "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;8"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 5080170018,
+  "duration": 7280625640,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 24,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;2",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -491,24 +166,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see Analyser Online   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 48325,
+  "duration": 101023674,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 162488138,
+  "duration": 140320304,
   "status": "passed"
 });
 formatter.match({
@@ -521,60 +198,61 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 322925679,
+  "duration": 348590434,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Analyser Online   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 9170168,
+  "duration": 9539233,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 42662689,
   "status": "passed"
 });
 formatter.after({
-  "duration": 626868257,
+  "duration": 830772902,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4880032570,
+  "duration": 5599452262,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 25,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;3",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;3",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -587,24 +265,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see Global Benchmark   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 61155,
+  "duration": 5845165,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 148120700,
+  "duration": 133547986,
   "status": "passed"
 });
 formatter.match({
@@ -617,60 +297,61 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 471864050,
+  "duration": 421984713,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Global Benchmark   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 5882798,
+  "duration": 8014222,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 31007427,
   "status": "passed"
 });
 formatter.after({
-  "duration": 591686506,
+  "duration": 586334853,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7309157382,
+  "duration": 5977434021,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 26,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;4",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;4",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -683,24 +364,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see Sandbox   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 54312,
+  "duration": 6471677,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 164936453,
+  "duration": 152363019,
   "status": "passed"
 });
 formatter.match({
@@ -713,60 +396,61 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 401839679,
+  "duration": 248339102,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Sandbox   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 7933396,
+  "duration": 8122846,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 35851883,
   "status": "passed"
 });
 formatter.after({
-  "duration": 596497606,
+  "duration": 604244972,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4855894110,
+  "duration": 6012605935,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 26,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 27,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;5",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;5",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -779,24 +463,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see Custom Testing   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 58588,
+  "duration": 4999267,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 154282755,
+  "duration": 153636143,
   "status": "passed"
 });
 formatter.match({
@@ -809,60 +495,61 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 343200291,
+  "duration": 284755059,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Custom Testing   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 4079385,
+  "duration": 9341230,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 30456610,
   "status": "passed"
 });
 formatter.after({
-  "duration": 585494943,
+  "duration": 15235949987,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4754781057,
+  "duration": 4847500987,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 28,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;6",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;6",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -875,24 +562,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see Sanctions Alert Service (SAS)   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 76122,
+  "duration": 5595415,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 182523265,
+  "duration": 132323187,
   "status": "passed"
 });
 formatter.match({
@@ -905,60 +594,61 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 298082445,
+  "duration": 257893303,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Sanctions Alert Service (SAS)   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 6158634,
+  "duration": 8083502,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 31537290,
   "status": "passed"
 });
 formatter.after({
-  "duration": 585108771,
+  "duration": 582427385,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5527301170,
+  "duration": 6063290971,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 28,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 29,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;7",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;7",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -971,24 +661,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see SANCTIONS ALERT TESTING (SAT)   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 84248,
+  "duration": 11265242,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 159818727,
+  "duration": 151699729,
   "status": "passed"
 });
 formatter.match({
@@ -1001,60 +693,61 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 311760080,
+  "duration": 263838111,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "SANCTIONS ALERT TESTING (SAT)   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 6232619,
+  "duration": 9035030,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 28718200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 596208512,
+  "duration": 610111947,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5942629460,
+  "duration": 5039479666,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
-  "name": "user should be able to Navigate to all link in Services page",
+  "line": 30,
+  "name": "User is able to view Contact Information on All Sub Pages in Services Page",
   "description": "",
-  "id": "verify-user-is-able-to-navigate-to-all-pages;user-should-be-able-to-navigate-to-all-link-in-services-page;;8",
+  "id": "verify-contact-information-on-footer-in-all-pages;user-is-able-to-view-contact-information-on-all-sub-pages-in-services-page;;8",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@category"
-    },
-    {
-      "line": 1,
       "name": "@smoke"
     },
     {
+      "line": 1,
+      "name": "@info"
+    },
+    {
       "line": 15,
-      "name": "@servicesPages"
+      "name": "@address1"
     }
   ]
 });
 formatter.step({
   "line": 17,
-  "name": "user is on the home page",
+  "name": "User is on the Home Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "User Click on Services page",
+  "name": "User Hover on Services page",
   "keyword": "When "
 });
 formatter.step({
@@ -1067,24 +760,26 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "should able to see Transaction Monitoring Validator   AML Analytics",
-  "matchedColumns": [
-    1
-  ],
+  "name": "User Scroll Down to Bottom Of the Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Should able to View Address on pages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "MyStepdefs.userIsOnTheHomePage()"
+  "location": "MyStepdefs.UserIsOnTheHomePage()"
 });
 formatter.result({
-  "duration": 91090,
+  "duration": 8379010,
   "status": "passed"
 });
 formatter.match({
-  "location": "MyStepdefs.userClickOnServicesPage()"
+  "location": "MyStepdefs.userHoverOnServicesPage()"
 });
 formatter.result({
-  "duration": 164415998,
+  "duration": 146920276,
   "status": "passed"
 });
 formatter.match({
@@ -1097,24 +792,25 @@ formatter.match({
   "location": "MyStepdefs.userNavigateToPagelink(String)"
 });
 formatter.result({
-  "duration": 269228681,
+  "duration": 292587101,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Transaction Monitoring Validator   AML Analytics",
-      "offset": 19
-    }
-  ],
-  "location": "MyStepdefs.shouldAbleToSeeServicesSubPage(String)"
+  "location": "MyStepdefs.userScrollDownToBottomOfThePage()"
 });
 formatter.result({
-  "duration": 7935106,
+  "duration": 10050279,
+  "status": "passed"
+});
+formatter.match({
+  "location": "MyStepdefs.userShouldAbleToViewAddressOnPages()"
+});
+formatter.result({
+  "duration": 33059735,
   "status": "passed"
 });
 formatter.after({
-  "duration": 614753695,
+  "duration": 612584638,
   "status": "passed"
 });
 });
